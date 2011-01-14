@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall `pkg-config fuse --cflags --libs` cagefs.c -o cagefs
