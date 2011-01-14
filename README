@@ -1,0 +1,6 @@
+Cagefs is intended to be a protection layer aganist new symlinks by malicious users in case you want to have a system that users can only store files on, not execute commands, and where they need wide symlinks that were created by administrators.
+All that cagefs does currently is blocking symlinks. This is how you can use it:
+
+# cagefs -o allow_other,default_permissions /var/symlink_protected/
+
+Nearly the whole code currently comes from the "fusexmp" sample fs from the fuse source.

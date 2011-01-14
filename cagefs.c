@@ -148,13 +148,7 @@ static int xmp_rmdir(const char *path)
 
 static int xmp_symlink(const char *from, const char *to)
 {
-	int res;
-
-	res = symlink(from, to);
-	if (res == -1)
-		return -errno;
-
-	return 0;
+	return -1;
 }
 
 static int xmp_rename(const char *from, const char *to)
